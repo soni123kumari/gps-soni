@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .main-box{
+    width:25%;
+box-shadow:0 0 5px grey,inset 0 0 10px black;
+color:white;
+font-weight: 500;
+height:95vh;
+display:flex;
+}
+
+.main-box>.box-one{
+    width: 95%;
+    margin-left: 2.3%;
+border: 1px solid black;
+height: 92vh;
+margin-top:6px;
+background:linear-gradient(20deg,rgb(29,29,31))
+}
+
+.main-box>.box-one>.box-two>{
+ display:flex;
+flex-direction: column;
+width:95%;
+margin-left:2.5%;
+
+}
+.main-box>.box-one>.box-two>span{
+display:flex;
+justify-content: space-around;
+
+}
+.main-box>.box-one>.box-two>span>small{
+font-size:10px;
+margin-top:4px;
+}
+.main-box>.box-one>.box-two>span>button{
+    width:80px;
+height:28px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+padding:1px 3px;
+outline:none;
+background-color: rgb(59,55,55);
+color: white;
+margin-left:2px;
+}
+.main-box>.box-one>.box-two>span>button:hover{
+
+transform: scale(0.95);
+
+
+}
+
+.main-box>.box-one>.box-three{
+    display:flex;
+    margin-top:3px;
+    width:95%;
+    margin-left:2.5%;
+    flex-direction: column;
+}
+.main-box>.box-one>.box-three>span{
+display:flex;
+justify-content: space-around;
+}
+
+
+.main-box>.box-one>.box-three>span>button{
+width:80px;
+margin-top:3px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+height:33px;
+background-color:black;
+color:white;
+outline:none;
+margin-left:2px;
+}
+.main-box>.box-one>.box-three>span>button:hover{
+transform: scale(0.95);
+
+
+}
+.main-box>.box-one>.box-three>span>small{
+font-size:10px;
+
+}
+.main-box>.box-one>.box-one-top{
+    width:95%;
+margin-left:2.5%;
+height:29vh;
+box-shadow: inset 0 0 10px grey;
+border:1px solid rgb(34, 32, 32);
+}
+.main-box>.box-one>.box-one-top>#box-one-button>{
+
+
+}
+.main-box>.box-one>.box-one-top>#box-one-button>button{
+display:100px;
+margin-left:2px;
+margin-top:6px;
+}
+.main-box>.box-one>.box-one-top>#box-one-text{
+display:flex;
+font-size:13px;
+margin-top:4px;
+justify-content: space-around;
+
+}
+
+
+.main-box>.box-one>.box-one-top>#box-one-middle{
+width:95%;
+margin-left:2.5%;
+height:13vh;
+margin-top:4px;
+border:1px solid black;
+box-shadow: 0 0 8px black;
+}
+
+.main-box>.box-one>.box-one-top>#box-one-middle>input[type=text]{
+width:95%;
+height:13vh;
+border:none;
+margin-left:2.5%;
+margin-top:5px;
+}
+@media(max-width:830px){
+    .main-box{
+        width:100%;
+    }
+}
+  </style>
+</head>
+<body>
+<center>
+   <div class='main-box'>
+<section class='box-one'>
+
+<article class='box-one-top'>
+<div id='box-one-text'>
+    <span style='font-size:19px;'>CASIO</span>
+    <span>fx-825678 PLUSE</span>
+
+</div>
+<center style='margin-top:4px'>
+    <code> NATURAL-U.P.A.M</code>
+</center>
+
+
+    <div id='box-one-middle'>
+        <input type='text' id='result'/>
+    </div>
+<span id=box-one-botton>
+    <button onclick="cuberut()">3<sub>√</sub></button>
+    <button onclick="fourrut()">4<sub>√</sub></button>
+    <button onclick="fiverut()">5<sub>√</sub></button>
+    <button onclick="sqrt()">√</button>
+    
+</span>
+</article>
+<div class='box-two'>
+<span>
+    <small>x<sub>2</sub></small>
+    <small>x<sub>3</sub></small>
+    <small>x<sub>4</sub></small>
+    <small>x<sub>5</sub></small>
+    <small>x<sub>6</sub></small>
+    <small>x<sub>7</sub></small>
+
+</span>
+<span>
+    <button onclick="x2()">x<sup>2</sup></button>
+    <button onclick="x3()">x<sup>3</sup></button>
+    <button onclick="x4()">x<sup>4</sup></button>
+    <button onclick="x5()">x<sup>5</sup></button>
+    <button onclick="x6()">x<sup>6</sup></button>
+    <button onclick="x7()">x<sup>7</sup></button>
+
+</span>
+<span>
+<small>x9<sup>9</sup></small>
+<small>log</small>
+<small>In</small>
+<small>e</small>
+<small>cot</small>
+<small>cotx</small>
+
+</span>
+<span>
+    <button onclick="x9()">x<sup>9</sup></button>
+    <button onclick="log()">log</button>
+    <button onclick="In()">In</button>
+    <button onclick="e()">e</button>
+    <button onclick="cot()">cot</button>  
+    <button onclick="cotx()">cotx</button>
+</span>
+<span>
+    <small>asinh</small>
+    <small>asin</small>
+    <small>sinh</small>
+    <small>sin</small>
+    <small>cos</small>
+    <small>cosh</small>
+
+</span>
+<span>
+    <button onclick="asinh()">asinh</button>
+    <button onclick="asinh()">asin</button>
+    <button onclick="asinh()">sinh</button>
+    <button onclick="asinh()">sin</button>
+    <button onclick="asinh()">cos</button>
+    <button onclick="asinh()">cosh</button>
+
+</span>
+<span>
+    <small>acos</small>
+    <small>acosh</small>
+    <small>tan</small>
+    <small>tanh</small>
+    <small>atan</small>
+    <small>atanh</small>
+
+</span>
+<span>
+    <button onclick="acos()">acos</button>
+    <button onclick="acosh()">acosh</button>
+    <button onclick="tan()">tan</button>
+    <button onclick="tanh()">tanh</button>
+    <button onclick="atan()">atan</button>
+    <button onclick="atanh()">atanh</button>
+    
+</span>
+
+</div>
+<div class='box-three'>
+<span>
+    <small>M</small>
+    <small>G</small>
+    <small>T</small>
+    <small>INS</small>
+    <small>OFF</small>
+
+</span>
+<span>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>DEL</button>
+    <button>AC</button>
+</span>
+<span>
+    <small>MAT</small>
+    <small>VCT</small>
+    <small>K</small>
+    <small>npr</small>
+    <small>ncr</small>
+</span>
+<span>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>x</button>
+    <button>/</button>
+</span>
+<span>
+    <small>S-SUM</small>
+    <small>S-VAR</small>
+    <small>DISTR</small>
+    <small>e=0</small>
+    <small>a+bi</small>
+
+</span>
+<span>
+    <button onclick="1()">1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>+</button>
+    <button>-</button>
+</span>
+<span>
+    <small>RND</small>
+    <small>RAN#</small>
+    <small>!@</small>
+    <small>DRG</small>
+    <small>Re-IM</small>
+
+
+</span>
+<span>
+    <button>RND</button>
+    <button>RND#</button>
+    <button>!@</button>
+    <button>DRG</button>
+    <button>Re-IM</button>
+
+</span>
+</div>
+</section>
+   
+   </div> 
+</center>
+    <script>
+  
+  function dis(val){
+    const display=document.getElementById('result')
+display.value += val
+}
+function slove(){
+    const display=document.getElementById('result')
+let x=display.value
+let y=eval(x)
+display.value=y
+}
+function del(){
+    const display=document.getElementById('result')
+    display.value=''
+}
+function x2(){
+    const display=document.getElementById('result')
+display.value=Math.pow(display.value,2)
+}
+function x3(){
+    const display=document.getElementById('result')
+display.value=Math.pow(display.value,3)
+}
+function x4(){
+    const display=document.getElementById('result')
+display.value=Math.pow(display.value,4)
+}
+function x5(){
+    const display=document.getElementById('result')
+display.value=Math.pow(display.value,5)
+}
+function x6(){
+    const display=document.getElementById('result')
+display.value=Math.pow(display.value,6)
+}
+function x7(){
+    const display=document.getElementById('result')
+display.value=Math.pow(display.value,6)
+}
+function x8(){
+    const display=document.getElementById('result')
+display.value=Math.pow(display.value,8)
+}
+function x9(){
+    const display=document.getElementById('result')
+display.value=Math.pow(display.value,9)
+}
+function sin(){
+    const display=document.getElementById('result')
+    display.value=Math.sin(display.value*(Math.PI/180))
+}
+    function sinh(){
+        const display=document.getElementById('result')
+        display.value=Math.sinh(display.value)
+    }
+    function asin(){
+        const display=document.getElementById('result')
+        display.value=Math.asin(display.value)
+    }
+    function asinh(){
+        const display=document.getElementById('result')
+        display.value=Math.asinh(display.value)
+    }
+
+function cos(){
+    const display=document.getElementById('result')
+    display.value=Math.cos(display.value)
+}
+function cosh(){
+    const display=document.getElementById('result')
+    display.value=Math.cosh(display.value)
+}
+function acos(){
+    const display=document.getElementById('result')
+    display.value=Math.acos(display.value)
+}
+function acosh(){
+    const display=document.getElementById('result')
+    display.value=Math.acosh(display.value)
+}
+function tan(){
+    const display=document.getElementById('result')
+    display.value=Math.tan(display.value)
+}
+
+
+function tanh(){
+    const display=document.getElementById('result')
+    display.value=Math.atan(display.value)
+}
+function atan(){
+    const display=document.getElementById('result')
+    display.value=Math.atan(display.value)
+}
+
+
+function acosh(){
+    const display=document.getElementById('result')
+    display.value=Math.atanh(display.value)
+}
+function cot(){
+    const display=document.getElementById('result')
+    display.value=1/Math.cot(display.value)
+}
+
+function log(){
+    const display=document.getElementById('result')
+    display.value=Math.log10(display.value)
+}
+function In(){
+    const display=document.getElementById('result')
+    display.value=Math.acos(display.value)
+}
+function cuberut(){
+    const display=document.getElementById('result')
+    display.value=Math.cbrt(display.value,1/3)
+}
+function fourrut(){
+    const display=document.getElementById('result')
+    display.value=Math.pow(display.value1/4)
+}
+function fiverut(){
+    const display=document.getElementById('result')
+    display.value=Math.pow(display.value1/5)
+}
+function sqrt(){
+    const display=document.getElementById('result')
+    display.value=Math.sqrt(display.value)
+}
+  </script>
+</body>
+</html>
