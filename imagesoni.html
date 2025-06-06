@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordtion image Gallery</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+margin: 0;
+box-sizing: border-box;
+    font-family: 'clicker script', cursive
+}
+body{
+    background-image: linear-gradient(#5433ff,#20bdff,#a5fecb);
+
+}
+.wrapper{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+padding: 20px;
+}
+.img_accordion{
+display: flex;
+width: 1000px;
+height: 500px;
+color: #fff;
+flex-direction: row;
+line-height: 25px;
+border: 7px solid #fff;
+box-shadow: 0px 10px 8px -2px rgba(0,0,0.0.2);  
+}
+.item_1{
+background-image: url("1.jpg");
+
+}
+.item_2{
+background-image: url("2.jpg");
+
+}.item_3{
+background-image: url("3.jpg");
+
+}.item_4{
+background-image: url("4.jpg");
+
+}.item_5{
+background-image: url("5.jpg");
+
+}
+.item{
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50%;
+cursor: pointer;
+position: relative;
+flex: 1 1 0%;
+overflow: hidden;
+transition: flex -.4s;
+}
+.item:hover{
+    flex: 3 1 0%;
+transition: all 0.3s ease-in-out;
+}
+.content *{
+visibility: hidden;
+opacity: 0;
+transform-style: preserve-3d;
+}
+.item:hover .content *{
+visibility: visible;
+opacity: 1;
+transform: none;
+transition: all 0.4s;
+}
+.content{
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(0,0,0,0.4);
+padding: 5px 5px;
+color: blue;
+visibility: hidden;
+z-index: 1;
+transition: all 0.4s;
+}
+.item:hover .content *{
+visibility: visible;
+
+}
+.caption{
+    font-size: 35px;
+    text-transform: capitalize;
+    transform: translate3d(0, 60px, 0);
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+<div class="img_accordion">
+    <div class="item item_1">
+        <div class="content">
+        <h1 class="caption">Winter mount</h1>
+    </div>
+</div><div class="item item_2">
+        <div class="content">
+        <h1 class="caption">Beautifull valley</h1>
+    </div>
+</div><div class="item item_3">
+        <div class="content">
+        <h1 class="caption">sunst view</h1>
+    </div>
+</div><div class="item item_4">
+        <div class="content">
+        <h1 class="caption">mount houses</h1>
+    </div>
+</div><div class="item item_5">
+        <div class="content">
+        <h1 class="caption">awesome view</h1>
+    </div>
+</div>
+    </div>
+    </div>
+</body>
+</html>
