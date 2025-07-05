@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowfall animation</title>
+</head>
+<style>
+body {
+margin: 0;
+padding: 0;
+}
+section {
+position: relative;
+background: url("11.jpg");
+background-size: cover;
+width: 100%;
+height: 800px;
+overflow: hidden;
+}
+.snow {
+position: absolute;
+top: 0;
+    left: 0;
+right: 0;
+bottom: 0;
+background: url("10.jpg");
+mix-blend-mode: screen;
+
+}
+snow1 {
+animation: animatesnow1 15s linear infinite;
+
+}
+.snow1 {
+animation: animatesnow1 15s linear infinite;
+
+}
+.snow2 {
+animation: animatesnow2 10s linear infinite;
+
+}
+.snow3 {
+animation: animatesnow3 15s linear infinite;
+}
+@keyframes animatesnow1 {
+0% {
+    background-position: 0 0;
+}
+100% {
+    background-position: 1000px 500px ;
+}
+}
+@keyframes animatesnow2 {
+0% {
+        background-position: 0 0;
+filter: blur(2px);
+}
+100% {
+    background-position: 1000px 500px ;
+filter: blur(2px);
+
+}
+
+}
+@keyframes animatesnow2 {
+0% {
+        background-position: 800px 450px;
+transform: scale(5);
+}
+100% {
+        background-position: 800px 450px;
+transform: scale(5);
+}
+}
+
+
+</style>
+<body>
+   <section>
+    <div class="snow snow1"></div>    
+    <div class="snow snow2"></div>
+    <div class="snow snow3"></div>
+
+   </section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
